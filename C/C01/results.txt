@@ -1,0 +1,24 @@
+OK?           Test Case                Response
+-----------------------------------------------
+Correct!              0  LOFIRST  9           0
+Correct!              0  HIFIRST  9           0
+Alas, wrong:   15737723  LOFIRST  8   157377230  should be 15737723
+Correct!       15737723  HIFIRST  8    15737723
+Alas, wrong:   78198090  LOFIRST  0    78198090  should be 781989
+Alas, wrong:   78198090  HIFIRST  0    78198090  should be 78198900
+Correct!            666  LOFIRST  6         666
+Correct!            666  HIFIRST  6         666
+Correct!       73642919  LOFIRST  5    34217699
+Correct!       73642919  HIFIRST  5    76993421
+Correct!           9591  LOFIRST  5        1599
+Correct!           9591  HIFIRST  5        9951
+Correct!            327  LOFIRST  4         327
+Correct!            327  HIFIRST  4         732
+Correct!       54740236  LOFIRST  3     2354746
+Alas, wrong:   54740236  HIFIRST  3     5474632  should be 54746302
+Correct!      328378532  LOFIRST  5   323325878
+Correct!      328378532  HIFIRST  5   878532332
+Correct!            279  LOFIRST  5         279
+Correct!            279  HIFIRST  5         792
+
+Score:  160 / 200

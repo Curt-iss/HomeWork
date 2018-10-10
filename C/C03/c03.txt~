@@ -1,0 +1,84 @@
+Assignment C03         Tanner Spicer
+
+
+
+1. 
+  a. 
+
+    (gdb) p limit
+    $1 = 1852727668
+    (gdb) p/x limit
+    $2 = 0x6e6e6174
+    (gdb) p addend
+    $3 = 116
+    (gdb) p/x addend
+    $4 = 0x74
+
+  b.  (gdb) info breakpoints
+      Num     Type           Disp Enb Address            What
+      1       breakpoint     keep y   0x0000000000400562 in main at q1.c:15 
+              breakpoint already hit 1 time
+      2       breakpoint     keep y   0x000000000040056b in main at q1.c:16
+              stop only if check > 30000000
+
+  c. Breakpoint 2, main (argc=2, argv=0x7fffffffe068) at q1.c:16
+     16	      check = (check & 0x0FFFFFFF );
+     (gdb) n
+     17	      check += addend; 
+     (gdb) n
+     15	        for (int iter = 1; iter <= limit; iter++) {
+     (gdb) p check
+     $5 = 242115048
+
+  d. (gdb) d 1
+     (gdb) info breakpoints
+     Num     Type           Disp Enb Address            What
+     2       breakpoint     keep y   0x000000000040056b in main at q1.c:16
+             stop only if check > 30000000
+	     breakpoint already hit 1 time
+
+  e. (gdb) p check
+     $6 = 242115048
+     (gdb) p iter
+     $7 = 1
+
+  
+2.
+
+  a.
+ 
+  (gdb) l
+  1	  #include "Q2Test.h"
+  2	  #include "Q2Fns.h"
+  3	
+  4	int Q2Test(int i1, int i2) {
+  5	
+  6	   if ( t1( i1 ) ) {
+  7	      return 1;                  // A
+  8		}
+  9	   else if ( t2( i1) ) {
+  10	      return 1;                  // B
+  (gdb) p i1
+  $1 = 500
+  (gdb) s
+  t1
+  9	   else if ( t2( i1) ) {
+  (gdb) n
+  t2
+  12	   else if ( t3( i1, i2 ) ) {
+  (gdb) n
+  t3
+  15	   else if ( t4( i1, i2 ) ) {
+  (gdb) n
+  t4
+  16	      return 1;                  // D
+
+    For part a, the function t4 must be the function that returns true.
+  As I "next" through the program, I skip over all of the if() statements that 
+  return false. However, when I come to t4(), gdb moves into that if() statement,
+  so t4 must return true for me to move into this statement.
+
+  b. 
+  
+
+

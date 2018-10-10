@@ -1,0 +1,32 @@
+Comparing profresults.txt to myresults.txt:
+
+First coordinate                Second coordinate               seconds  DMS
+   zero-point line
+------------------------------------------------------------------------------------------
+   zero-point line
+(104d 49m 35s W, 32d 20m 17s N)	(104d 42m 29s W, 32d 27m 51s N)	880	 0d 14m 40s
+   score: 20 / 20
+(104d 10m 38s W, 32d 51m 41s N)	(104d 23m 13s W, 32d 49m 30s N)	886	 0d 14m 46s
+   score: 20 / 20
+(104d 23m 28s W, 32d 48m 57s N)	(104d 13m 44s W, 32d 25m 14s N)	2007	 0d 33m 27s
+   score: 20 / 20
+(104d 43m 00s W, 32d 46m 50s N)	(104d 24m 42s W, 32d 50m 37s N)	1325	 0d 22m 05s
+   00s should be 09s
+   1325 should be 1334
+   05s should be 14s
+   deduction for incorrect tokens: 3
+   score: 17 / 20
+(104d 45m 03s W, 32d 34m 13s N)	(104d 46m 31s W, 32d 25m 59s N)	582	 0d 09m 42s
+   score: 20 / 20
+(104d 28m 05s W, 32d 41m 53s N)	(104d 45m 53s W, 32d 39m 26s N)	1215	 0d 20m 15s
+   score: 20 / 20
+(104d 13m 44s W, 32d 25m 14s N)	(104d 20m 06s W, 32d 19m 17s N)	739	 0d 12m 19s
+   score: 20 / 20
+(104d 35m 25s W, 32d 35m 42s N)	(104d 49m 20s W, 32d 03m 57s N)	2740	 0d 45m 40s
+   score: 20 / 20
+(104d 23m 39s W, 32d 45m 54s N)	(104d 23m 40s W, 32d 17m 02s N)	1733	 0d 28m 53s
+   score: 20 / 20
+(104d 33m 03s W, 32d 46m 11s N)	(104d 26m 23s W, 32d 28m 17s N)	1474	 0d 24m 34s
+   score: 20 / 20
+
+Total score for test 1 >>  197 / 200
